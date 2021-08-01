@@ -1,0 +1,258 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<nav class="navbar navbar-expand-md fixed-top top-nav">
+	<div class="container">
+		  <a class="navbar-brand" href="#"><strong>Meditastic</strong></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="Index.html">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#about">About</a>
+		      </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="disease.html">Diseases info</a>
+		      </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="Counsel button.html">Counselling</a>
+		      </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="locate.html">Locate Hospitals</a>
+		      </li>
+
+		    
+		      
+		    </ul>
+		  </div>	
+	</div>
+</nav>
+
+
+<div class="wrapper">
+    <a href="counselling.html">
+
+    <div class="button">
+      <span class="button__mask"></span>
+      <span class="button__text">Watch Video For why COVID Vaccine is important</span>
+      <span class="button__text button__text--bis"></span>
+    </div>
+    </a>
+    
+    <br>
+    <a href="Depression.html">
+    <div class="button">
+      <span class="button__mask"></span>
+      <span class="button__text">Watch Video For Depression</span>
+      <span class="button__text button__text--bis"></span>
+    </div>
+    </a>
+    
+  </div>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900");
+body {
+  font-family: "Work Sans", sans-serif;
+  background: linear-gradient(to right, #3f3f3f, #1b1b1b 70%);;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  border: 0.2em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #FFF;
+}
+.button__text {
+  display: block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.button__text:before {
+  content: attr(title);
+}
+.button__text--bis {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-1em);
+  opacity: 0;
+}
+.top-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 80px;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+.top-nav .navbar-nav li .nav-link {
+    color: #fff;
+    font-size: 14px;
+    padding:29px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+.top-nav li a.nav-link:hover, .top-nav .nav-item.active a.nav-link{
+    border-bottom: 3px solid #35cbdf;
+    color: #35cbdf;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+.top-nav .navbar-brand{
+	font-size: 28px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+.top-nav.light-header{
+	height: 60px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.23);
+	transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+.top-nav.light-header .navbar-brand{
+	color: #212121;
+}
+.top-nav.light-header .navbar-nav li .nav-link {
+    color: #212121;
+    padding: 19px 15px;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+
+.top-nav.light-header li a.nav-link:hover, .top-nav.light-header .nav-item.active a.nav-link{
+	border-bottom: 3px solid #35cbdf;
+    color: #35cbdf;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+.button__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  opacity: 1;
+}
+.button:hover .button__text {
+  -webkit-animation: fx-text 0.3s ease-out;
+          animation: fx-text 0.3s ease-out;
+}
+.button:hover .button__text--bis {
+  -webkit-animation: fx-text-bis 0.3s ease-out;
+          animation: fx-text-bis 0.3s ease-out;
+}
+.button:hover .button__mask {
+  -webkit-animation: fx-mask 0.3s ease-out;
+          animation: fx-mask 0.3s ease-out;
+}
+
+.button:active {
+  opacity: 1;
+  background: white;
+  color: inherit;
+}
+
+@-webkit-keyframes fx-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@keyframes fx-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+@-webkit-keyframes fx-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1em);
+    opacity: 0;
+  }
+}
+@keyframes fx-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1em);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fx-text-bis {
+  0% {
+    transform: translateX(-1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fx-text-bis {
+  0% {
+    transform: translateX(-1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+</style>
